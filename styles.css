@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #0077b6; /* Azul río */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaciado entre los enlaces del menú */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo de la sección hero */
+.hero {
+    position: cover;
+    background: url('wwr/images1.1/Hydra-Kicking-Horse-Classic-Whitewater-Rafting-1.jpg') 
+    height: 100px; /* Ajusta la altura según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+}
+
+.cta-button {
+    background: #ffcc00; /* Amarillo */
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #1b5e20; /* Verde bosque */
+}
+
+/* Estilo para la sección de aventura */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.images-container img {
+    width: 18%; /* Ajusta el ancho de las imágenes */
+    margin-bottom: 10px;
+}
+
+/* Estilo del footer */
+footer {
+    background: #0077b6; /* Azul río */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.social-media a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: white; /* Color de texto para los enlaces de redes sociales */
+    margin: 0 10px; /* Espaciado entre los íconos */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Opcional: agrega un subrayado al pasar el mouse */
