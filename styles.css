@@ -1,3 +1,25 @@
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Menú horizontal */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaciado entre los enlaces del menú */
+}
+Modificaciones en el HTML
+Asegúrate de que tu estructura HTML sea coherente con las modificaciones en CSS. Aquí no necesitas hacer cambios en el HTML si ya tienes el código como lo compartiste anteriormente.
+
+Ejemplo Completo del CSS
+Aquí tienes el código CSS completo con las modificaciones incluidas:
+
+css
+Copiar código
 /* Estilos generales */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -7,21 +29,25 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logotipo y espacio flexible para la navegación */
+    align-items: center; /* Centrar verticalmente */
     background: #0077b6; /* Azul río */
     color: white;
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo img {
     height: 50px; 
 }
 
+nav {
+    display: flex; /* Flexbox para la barra de navegación */
+}
+
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex; /* Menú horizontal */
     margin: 0;
     padding: 0;
 }
@@ -38,7 +64,7 @@ nav ul li a {
 /* Estilo de la sección hero */
 .hero {
     position: cover;
-    background: url('wwr/images1.1/Hydra-Kicking-Horse-Classic-Whitewater-Rafting-1.jpg') 
+    background: url('wwr/images1.1/Hydra-Kicking-Horse-Classic-Whitewater-Rafting-1.jpg');
     height: 100px; /* Ajusta la altura según sea necesario */
     display: flex;
     align-items: center;
@@ -98,3 +124,4 @@ footer {
 
 .social-media a:hover {
     text-decoration: underline; /* Opcional: agrega un subrayado al pasar el mouse */
+}
