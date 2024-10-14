@@ -1,26 +1,3 @@
-nav {
-    display: flex;
-}
-
-nav ul {
-    list-style: none;
-    display: flex; /* Menú horizontal */
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 20px; /* Espaciado entre los enlaces del menú */
-}
-Modificaciones en el HTML
-Asegúrate de que tu estructura HTML sea coherente con las modificaciones en CSS. Aquí no necesitas hacer cambios en el HTML si ya tienes el código como lo compartiste anteriormente.
-
-Ejemplo Completo del CSS
-Aquí tienes el código CSS completo con las modificaciones incluidas:
-
-css
-Copiar código
-/* Estilos generales */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -31,97 +8,200 @@ body {
 header {
     display: grid;
     grid-template-columns: auto 1fr; /* Logotipo y espacio flexible para la navegación */
-    align-items: center; /* Centrar verticalmente */
-    background: #0077b6; /* Azul río */
-    color: white;
+    align-items: center;
+    background-color: #0077b6; /* Azul río */
     padding: 10px 20px;
+    color: white;
 }
 
 .logo img {
-    height: 50px; 
+    height: 50px; /* Tamaño del logotipo */
 }
 
 nav {
-    display: flex; /* Flexbox para la barra de navegación */
+    display: flex; /* Flexbox para los elementos de navegación */
+    justify-content: flex-end; /* Alinear la barra de navegación a la derecha */
 }
 
 nav ul {
+    display: flex; /* Alinear los elementos de la lista en fila */
     list-style: none;
-    display: flex; /* Menú horizontal */
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px; /* Espaciado entre los enlaces del menú */
+    margin-left: 20px; /* Espacio entre los enlaces */
 }
 
 nav ul li a {
-    color: white;
+    color: white; /* Color blanco para los enlaces */
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* Estilo de la sección hero */
+nav ul li a:hover {
+    text-decoration: underline; /* Efecto hover para los enlaces */
+}
+
+/* Hero Section */
 .hero {
-    position: cover;
-    background: url('wwr/images1.1/Hydra-Kicking-Horse-Classic-Whitewater-Rafting-1.jpg');
-    height: 100px; /* Ajusta la altura según sea necesario */
+    background: url('wwr/images1.1/Hydra-Kicking-Horse-Classic-Whitewater-Rafting-1.jpg') no-repeat center center;
+    background-size: cover; /* Ajuste de la imagen de fondo */
+    height: 400px; /* Altura de la sección */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    color: white;
+    position: relative;
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para hacer el texto más legible */
     padding: 20px;
+    border-radius: 8px;
 }
 
 .cta-button {
-    background: #ffcc00; /* Amarillo */
+    background-color: #ffcc00; /* Amarillo */
     color: black;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-/* Estilos para las secciones */
-section {
-    padding: 20px;
+.cta-button:hover {
+    background-color: #e6b800; /* Oscurecer en hover */
 }
 
-h2 {
-    color: #1b5e20; /* Verde bosque */
+/* History Section */
+#history {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-/* Estilo para la sección de aventura */
+#history h2 {
+    color: #1b5e20; /* Verde oscuro */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Adventure Section */
+#adventure {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+#adventure h2 {
+    text-align: center;
+    color: #0077b6; /* Azul río */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 .images-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px; /* Espaciado entre imágenes */
+}
+
+.images-container figure {
+    width: 18%; /* Ajuste de ancho para las imágenes */
+    text-align: center;
 }
 
 .images-container img {
-    width: 18%; /* Ajusta el ancho de las imágenes */
-    margin-bottom: 10px;
+    width: 100%; /* Ajuste al 100% del contenedor */
+    height: auto;
+    border-radius: 8px;
 }
 
-/* Estilo del footer */
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Footer */
 footer {
-    background: #0077b6; /* Azul río */
+    background-color: #0077b6;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
 }
 
-/* Estilo para los enlaces de redes sociales */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .social-media a {
-    text-decoration: none; /* Quitar subrayado de los enlaces */
-    color: white; /* Color de texto para los enlaces de redes sociales */
-    margin: 0 10px; /* Espaciado entre los íconos */
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 .social-media a:hover {
-    text-decoration: underline; /* Opcional: agrega un subrayado al pasar el mouse */
+    text-decoration: underline;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: auto 1fr; /* Asegurar que la navegación sigue alineada */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Cambiar a menú vertical en pantallas pequeñas */
+        align-items: flex-start; /* Alinear a la izquierda */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Eliminar margen para la alineación vertical */
+        margin-bottom: 10px; /* Espaciado entre elementos */
+    }
+
+    nav ul li a {
+        color: white; /* Color blanco para los enlaces en pantallas pequeñas */
+    }
+    
+    .images-container figure {
+        width: 48%; /* Ajustar el ancho de las imágenes en pantallas pequeñas */
+    }
+}
+Verifica el HTML:
+El HTML que usas para el menú debe verse algo así:
+
+html
+Copiar código
+<header>
+    <div class="logo">
+        <img src="wwr/images1.1/logo9_200.png" alt="Rafting Peru Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#trips">Trips</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
