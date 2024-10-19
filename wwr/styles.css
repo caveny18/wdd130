@@ -56,7 +56,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('images1.1/Hydra-Kicking-Horse-Classic-Whitewater-Rafting-1.jpg') no-repeat center center;
+    background: url('wwr/images1.1/Hydra-Kicking-Horse-Classic-Whitewater-Rafting-1.jpg') no-repeat center center;
     background-size: cover; /* Ajuste de la imagen de fondo */
     height: 400px; /* Altura de la sección */
     display: flex;

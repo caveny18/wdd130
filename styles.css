@@ -151,4 +151,24 @@ nav ul li a:hover {
 .images-container img {
     width: 100%; /* Ajustar al 100% del contenedor */
     height: auto; /* Mantener la proporción de la imagen */
-   
+}
+    footer {
+        background-color: #0077b6;
+        padding: 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between; /* Alinea el texto a la izquierda y los íconos a la derecha */
+        align-items: center;
+    }
+    
+    footer .social-media {
+        display: flex; 
+        justify-content: flex-end; 
+        gap: 15px; 
+    }
+    
+    footer .social-media a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
