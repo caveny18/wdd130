@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="White Water Rafting — book guided rafting trips, sign up for our newsletter, and learn about our purpose and offerings.">
+    <meta name="author" content="Carlos Ruiz">
+    <title>Home | White Water Rafting</title>
+
+    <!-- Google Fonts (same as site plan) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Single site CSS -->
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <!-- Common Header -->
+    <header class="site-header">
+        <img class="logo" src="images/logo-removebg-preview.png" alt="Rafting Adventures Co. logo">
+        <!-- Site title como texto (evita segundo h1) -->
+        <p class="site-title">White Water Rafting</p>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="home.html" aria-current="page">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero (full width image + heading + CTA) -->
+        <section class="hero" aria-labelledby="hero-title">
+            <img src="images/rafting4.jpg" alt="Raft cutting through a whitewater rapid">
+            <h1 id="hero-title">Find Your Next Whitewater Adventure</h1>
+            <article>
+                <!-- Encabezado oculto para cumplir con la advertencia del validador -->
+                <h2 class="visually-hidden">Hero Intro</h2>
+                <p>From family‑friendly floats to adrenaline‑packed runs, our certified guides will get you safely down
+                    the river with big smiles.</p>
+                <p><a class="btn cta" href="trips.html">Explore Trips</a></p>
+            </article>
+        </section>
+
+        <!-- Newsletter (name + email + labels + ids + name attrs + non 'submit' button text) -->
+        <section class="contact-form newsletter" aria-labelledby="newsletter-title">
+            <h2 id="newsletter-title">Join our Newsletter</h2>
+            <p>Trip releases, discount codes, and river tips in your inbox once a month.</p>
+
+            <form action="#" method="post" novalidate>
+                <label for="nl-name">Name</label>
+                <input id="nl-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+
+                <label for="nl-email">Email</label>
+                <input id="nl-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                    required>
+
+                <button type="submit" aria-label="Sign up for the newsletter">Sign me up</button>
+            </form>
+        </section>
+
+        <!-- Call to Action block linking to Trips (separate from hero) -->
+        <section class="trips-cta center" aria-labelledby="cta2-title">
+            <h2 id="cta2-title">Ready to get on the river?</h2>
+            <p><a class="btn cta" href="trips.html">See Dates &amp; Availability</a></p>
+        </section>
+
+        <!-- Grid Content: purpose + offerings with at least two images -->
+        <section class="home-grid" aria-labelledby="why-title">
+            <h2 id="why-title">Why Raft with Us</h2>
+
+            <div class="grid">
+                <article class="card">
+                    <img src="images/rafting1.jpg" alt="Guides leading a raft through waves" loading="lazy" width="600"
+                        height="400">
+                    <h3>Pro Guides. Safe Fun.</h3>
+                    <p>Our certified guides know these rivers like home. Safety first, stoke always—so you can focus on
+                        the fun.</p>
+                </article>
+
+                <article class="card">
+                    <img src="images/rafting2.jpg" alt="Group smiling after a splashy rapid" loading="lazy" width="600"
+                        height="400">
+                    <h3>Trips for Every Level</h3>
+                    <p>Beginner to advanced runs, half‑day to multi‑day—pick your pace and we’ll handle the logistics.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <img src="images/rafting3.jpg" alt="Canyon scenery on a sunny day" loading="lazy" width="600"
+                        height="400">
+                    <h3>Scenery You’ll Never Forget</h3>
+                    <p>Towering canyons, crystal water, campfire nights—Peru’s rivers deliver the good stuff, season
+                        after season.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Common Footer -->
+    <footer class="site-footer">
+        <p>©2025 Rafting Adventures Co. | Carlos Ruiz</p>
+        <nav class="socialmedia" aria-label="Social Media">
+            <a href="https://facebook.com"><img src="images/face.png" alt="Facebook" width="32" height="32"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" width="32" height="32"></a>
+            <a href="https://instagram.com"><img src="images/ig.jpg" alt="Instagram" width="32" height="32"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
