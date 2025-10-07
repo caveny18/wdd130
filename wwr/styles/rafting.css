@@ -1,8 +1,4 @@
-/* =========================
-   Rafting Site — Global CSS
-   ========================= */
-
-/* Paleta y tipografías (site plan) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
 :root {
   --primary-color: #338479;
   --secondary-color: #9DCBB7;
