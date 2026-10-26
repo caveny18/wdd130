@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dentem | Gestión odontológica</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="logo">D</div><div><strong>dentem</strong><small>gestión odontológica</small></div></div>
+  <div class="nav-label">ESPACIO DE TRABAJO</div>
+  <nav class="nav" id="nav">
+    <button class="active" data-page="inicio"><span class="ico">▦</span>Panel general</button>
+    <button data-page="citas"><span class="ico">▣</span>Agenda y citas</button>
+    <button data-page="pacientes"><span class="ico">♙</span>Pacientes</button>
+    <button data-page="historias"><span class="ico">✚</span>Historias clínicas</button>
+    <button data-page="pregunta"><span class="ico">✳</span>Consulta rápida</button>
+    <button data-page="odontograma"><span class="ico">▤</span>Odontograma</button>
+    <button data-page="equipo"><span class="ico">⚕</span>Equipo y sillones</button>
+  </nav>
+  <div class="nav-label">SISTEMA</div>
+  <nav class="nav"><button data-page="ajustes"><span class="ico">⚙</span>Preferencias</button></nav>
+  <div class="sidebar-foot"><span class="online"></span><strong>Modo piloto activo</strong><br><span style="color:#a9c4d2">Los datos de esta demo se guardan solo en este navegador.</span></div>
+</aside>
+<main class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:12px"><button class="btn mobile-menu" id="menuBtn" aria-label="Abrir menú">☰</button><div class="crumb">Dentem <span class="muted">/</span> <strong id="crumb">Panel general</strong></div></div>
+    <div class="top-actions"><span class="pill">PILOTO · SIN SERVIDOR</span><div class="avatar">DR</div><div><strong style="font-size:12px;display:block">Administrador</strong><span class="muted small">Consultorio Dentem</span></div></div>
+  </header>
+  <section class="content" id="content"></section>
+</main>
+</div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal" id="modal"></div></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
